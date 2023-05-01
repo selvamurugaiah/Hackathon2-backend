@@ -11,6 +11,7 @@ app.use(cors());
  const PORT= 5500;
 
 app.use(express.json());
+app.use("/",()=>console.log("BookMyShow-App"))
 app.use("/movies", moviesRouter);
 app.use("/users", userRouter);
 
